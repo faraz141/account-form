@@ -1,0 +1,283 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', sans-serif;
+            
+            }
+body{
+    width: 100%;
+    min-height: 150vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+        .container{
+            padding: 20px;
+            margin: 30px  0px 20px 50px;
+            border: 1px solid black;
+            border-top: 5px solid red;
+            width: 600px;
+            min-height: 100vh;
+        }
+
+.c1{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex-direction: column;
+    background-color: gainsboro;
+    position: relative;
+    
+
+}
+.table1{
+    background-color: gainsboro;
+    position: relative;
+}
+
+.table1 td{
+    padding: 6px;
+}
+input{
+    margin-top: 10px;
+}
+.btn{
+    background-color: red;
+    padding: 5px;
+    align-items: center;
+    border: none;
+    border-radius: 7px;
+    width: 70px;
+    color: white;
+    font-weight: 600;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h2>Create Your Account</h2><br><br>
+        <h4 style="color: red;">* Required Information</h4><br><br>
+
+        <h3 style="background-color: rgba(151, 151, 151, 0.671); width:100%">Basic Information</h3>
+
+<div class="c1">
+
+    <!-- table 1 -->
+
+<table class="table1">
+    <tr>
+        <td>
+            <label for="">Email * </label><br>
+            <input type="email" style="width: 300px;padding:5px;" >
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="">Password * </label><br>
+            <input type="password" style="width: 300px; padding:5px;" >
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="">Retype Password * </label><br>
+            <input type="password" style="width: 300px; padding:5px;" >
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="">First Name * </label><br>
+            <input type="text" style="width: 300px; padding:5px;" >
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="">Last Name * </label><br>
+            <input type="text" style="width: 300px; padding:5px;" >
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="">Phone Number * </label><br>
+            <input type="text" style="width: 300px; padding:5px;" placeholder="999-999-999" >
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="">Address * </label><br>
+            <input type="text" style="width: 300px; padding:5px;" >
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="">City * </label><br>
+            <input type="text" style="width: 300px; padding:5px;" >
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="">Province * </label><br>
+            <select name="" id="" style="width: 300px; height:33px;background-color:white   ">
+                <option value="">Sindh</option>
+                <option value="">Punjab</option>
+                <option value="">Balochistan</option>
+                <option value="">Khyber Pakhtawn kha</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="">Country * </label><br>
+            <input type="text" style="width: 300px; padding:5px;" >
+        </td>
+    </tr>
+
+</table>
+        </div>
+        <h3 style="background-color: rgba(151, 151, 151, 0.671); width:100%">Education</h3>
+        <div class="c1">
+
+
+<!-- table 2 -->
+
+
+            <table class="table1" id="table2">
+                <tr>
+                    <td>
+                        <label for="">School * </label><br>
+                        <input type="text" style="width: 300px;padding:5px;" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Program * </label><br>
+                        <input type="text" style="width: 300px; padding:5px;" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Education level * </label><br>
+                        <select name="" id=""  style="width: 300px; height:33px;background-color:white   ">
+                           
+                            <option value="" disabled selected  >-select-</option>
+                            <option value="">Graduated</option>
+                            <option value="">Under-Graduate</option>
+                            <option value="">Did Not Graduate</option>
+                        </select>
+                        
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Graduation Date * </label><br>
+                        <input type="date" style="width: 300px; padding:5px;" >
+                    </td>
+                </tr>
+            </table>
+                    </div>
+
+                    <h3 style="background-color: rgba(151, 151, 151, 0.671); width:100%">Work Experience</h3>
+                    <div class="c1">
+                        
+                        <!-- table 3 -->
+            
+            
+            
+                        <table class="table1" id="table3">
+                            <tr>
+                                <td>
+                                    <label for="">Employer: * </label><br>
+                                    <input type="text" style="width: 300px;padding:5px;" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="">Job Tile * </label><br>
+                                    <input type="text" style="width: 300px; padding:5px;" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="">Job Duty * </label><br>
+                                    <textarea name="" id="" cols="29" rows="4" style="padding:5px;margin-top:10px"></textarea>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <form action="">
+                                    <label for="">Worked Year * </label><br>
+                                    <input type="number" style="width: 300px; padding:5px;" min="2000">
+                                </form>
+                                </td>
+                            </tr>
+
+                        </table>
+                        <h3 style="background-color: rgba(151, 151, 151, 0.671); width:100%">Attachments</h3>
+                        
+                        <!-- table 4 -->
+
+                        <div class="c1">
+                            <table class="table1" id="table4">
+                                    <tr>
+                                        <td>
+                                            <div class="att">   
+                                            <label for="">Attachments:</label>
+                                            <input type="file">
+
+                                        </td>
+                                    </tr>
+
+                            </table>
+
+                        </div>
+                        <div class="c1">
+                            <table class="table1" id="table5"> 
+                              <td>  <button type="reset"  class="btn">Reset</button></td>
+                               <td> <button type="submit" class="btn">Apply</button></td>
+                            </table>
+                        </div>
+                                </div>          
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+</body>
+</html>
